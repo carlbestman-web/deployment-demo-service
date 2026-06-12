@@ -13,15 +13,7 @@ public class HealthController {
         return Map.of(
                 "status", "UP",
                 "service", "deployment-demo-service",
-                "version", "v3"
+                "version", "v4"
         );
     }
 }
-
-/*
-return Map.of(
-                "status", "UP",
-                        "service", "deployment-demo-service"
-);
-
- */
