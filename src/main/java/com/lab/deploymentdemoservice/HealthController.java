@@ -16,4 +16,13 @@ public class HealthController {
                 "version", "v2"
         );
     }
+    @GetMapping("/config")
+    public Map<String, String> config() {
+
+        return Map.of(
+                "environment", System.getenv("APP_ENV"),
+                "region", System.getenv("APP_REGION"),
+                "apiKey", System.getenv("API_KEY")
+        );
+    }
 }
